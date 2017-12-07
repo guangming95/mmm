@@ -1,29 +1,34 @@
-window.onload = function () {
-  var maxWidth = 640;
-  var uiFontSize = 40;
-  var html = document.documentElement;
-  var screenWidth = html.clientWidth;
-  var bili = uiFontSize/maxWidth;
+$(function () {
+    //导航加载
+    $.ajax({
+        url: "http://127.0.0.1:9090/api/getindexmenu",
+        type: "get",
+        success: function (data) {
+            console.log(data);
+            console.log(1);
+            $('.m-nav > ul').html(template("tpl", data));
+        }
+    });
 
-  var timer = null;
+//    导航展开事件
+    $(".m-nav").on("click", ".nav-more", function (e) {
+        e.preventDefault();
+        $('.m-nav').animate({
+            height:"16rem"
+        },500);
+    });
 
-  // html.style.fontSize = bili * screenWidth + "px";
+//    打折列表加载
 
-  getSize();
-  
-  window.onresize = getSize;
-
-  function getSize() {
-    screenWidth = html.clientWidth;
-    if (screenWidth <= 320) {
-      html.style.fontSize = bili * 320 + "px";
-    } else if (screenWidth >= maxWidth) {
-      html.style.fontSize = bili * maxWidth + "px";
-    } else {
-      html.style.fontSize = bili * screenWidth + "px";
-    }
-  }
+    $.ajax({
+        url:"http://127.0.0.1:9090/api/getmoneyctrl",
+        type:"get",
+        success:function (data) {
+            console.log(data);
+            $('.m-sale .m-sale-main ul').html(template("tpl1",data));
+        }
+    });
 
 
-  console.log(screenWidth);
-};
+});
+

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买---分类商品详情</title>
+  <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+<div class="container">
+  <!------------头部   S--------------->
+  <div class="m-top">
+    <div class="m-logo fl">
+      <a href="index.html"><img src="images/header_logo.png" alt=""></a>
+    </div>
+    <div class="m-app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!------------头部   E--------------->
+
+  <!------------搜索   S--------------->
+  <div class="m-search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <button>搜索</button>
+  </div>
+  <!------------搜索   E--------------->
+
+  <div class="m-productlist">
+    <div class="top clearfix">
+      <div class="old-url fl">
+        <!--模板填充tpl-->
+      </div>
+      <button class="filtrate fr">筛选</button>
+    </div>
+
+    <div class="img-box">
+    <!--模板填充tpl1-->
+    </div>
+
+
+    <div class="info">
+      <!--模板填充tpl2-->
+    </div>
+
+    <div class="comment">
+      <div class="comment-top">网友评价</div>
+      <ul class="comment-info">
+        <!--模板填充tpl3-->
+      </ul>
+    </div>
+
+
+    <div class="bottom">
+      <button>查看更多评价</button>
+    </div>
+
+  </div>
+  <!------------底部   S--------------->
+  <div class="m-footer">
+    <ul class="clearfix">
+      <li>登录</li>
+      <li>注册</li>
+      <li class="goTop"><img src="images/top.jpg">返回顶部</li>
+    </ul>
+    <p><span class="col-red">手机app下载</span><span class="col-black">慢慢买手机版</span>--掌上比价平台</p>
+    <p>m.www.com</p>
+  </div>
+
+  <!------------底部   E--------------->
+
+</div>
+<!--分类导航加载-->
+
+<script type="text/html" id="tpl">
+  <a href="index.html">首页</a><span>></span><a href="productlist.html?categoryid={{result[0].categoryId}}&category={{result[0].category}}&pageid=1">{{result[0].category}}</a><span>></span><a href="#"
+                                                                                            data-categoryid="{{result[0].categoryId}} "
+                                                                                            data-titleid="{{result[0].titleId}}">{{brandName}}</a>
+  <span>></span>
+</script>
+
+<!--标题图片添加-->
+<script type="text/html" id="tpl1">
+  <p>{{result[0].productName}}</p>
+  {{@result[0].productImg}}
+</script>
+
+
+<!--购买信息加载-->
+
+<script type="text/html" id="tpl2">
+  <ul class="nav">
+    <li>比价购买</li>
+    <li>产品参数</li>
+    <li>评价(21321)</li>
+  </ul>
+  <div class="goBuy clearfix">
+    {{@result[0].bjShop}}
+    </div>
+  <p class="other">*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+  </div>
+</script>
+
+<!--网友评价-->
+
+<script type="text/html" id="tpl3">
+  {{each result v i}}
+  <li>
+    <div class="comment-info-top clearfix">
+      <p class="clearfix"><span class=" fl">{{v.comName}}</span><span class="fr">{{v.comTime}}</span></p>
+      <p class="fr">{{v.comFrom}}</p>
+    </div>
+    <div class="comment-info-comment">
+      {{v.comContent}}
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--rem响应-->
+<script src="js/common.js"></script>
+<script src="js/bijia.js"></script>
+
+</body>
+</html>

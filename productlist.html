@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买---分类商品列表</title>
+  <link rel="stylesheet" href="css/productlist.css">
+</head>
+<body>
+<div class="container">
+  <!------------头部   S--------------->
+  <div class="m-top">
+    <div class="m-logo fl">
+      <a href="index.html"><img src="images/header_logo.png" alt=""></a>
+    </div>
+    <div class="m-app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!------------头部   E--------------->
+
+  <!------------搜索   S--------------->
+  <div class="m-search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <button>搜索</button>
+  </div>
+  <!------------搜索   E--------------->
+
+  <div class="m-productlist">
+    <div class="top clearfix">
+      <div class="old-url fl">
+        <!--模板填充tpl-->
+      </div>
+      <button class="filtrate fr">筛选</button>
+    </div>
+
+
+    <div class="main">
+      <ul>
+        <!-- 模板填充tpl1-->
+      </ul>
+    </div>
+
+
+    <div class="bottom clearfix">
+      <button class="btn-prev fl">上一页</button>
+      <div class="btn-center">
+        <!--模板tpl2-->
+      </div>
+      <button class="btn-next fr">下一页</button>
+    </div>
+  </div>
+
+
+  <!------------底部   S--------------->
+  <div class="m-footer">
+    <ul class="clearfix">
+      <li>登录</li>
+      <li>注册</li>
+      <li class="goTop"><img src="images/top.jpg">返回顶部</li>
+    </ul>
+    <p><span class="col-red">手机app下载</span><span class="col-black">慢慢买手机版</span>--掌上比价平台</p>
+    <p>m.www.com</p>
+  </div>
+
+  <!------------底部   E--------------->
+
+</div>
+<!--分类导航加载-->
+
+<script type="text/html" id="tpl">
+  <a href="index.html">首页</a><span>></span><a href="category.html">全部分类</a><span>></span><a href="#"
+                                                                                            data-categoryid="{{result[0].categoryId}} "
+                                                                                            data-titleid="{{result[0].titleId}}">{{result[0].category}}</a>
+  <span>></span>
+</script>
+
+<!--商品列表模板-->
+
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <li>
+    <a href="bijia.html?categoryid={{v.categoryId}}&productId={{v.productId}}&brandName={{v.brandName}}" class="clearfix">
+      {{@v.productImg}}
+      <div class="info">
+        <p>{{v.productName}}</p>
+        <p class="price">{{v.productPrice}}</p>
+        <p class="other">{{v.productPrice}} {{v.productCom}}</p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+<!--页数加载模板-->
+
+<script type="text/html" id="tpl2">
+  <span class="currentPage" data-end="{{count}}"  data-index="{{index}}">{{index}}/{{count}}<i class="fa fa-caret-down fr"></i></span>
+  <ul>
+    <% for(var i=1;i<=count;i++){ %>
+    <li data-pageid="{{i}}" class="{{index === i ?'now' : ''}}">{{i}}/{{count}}</li>
+    <%}%>
+  </ul>
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--rem响应-->
+<script src="js/common.js"></script>
+<script src="js/productlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import "common";
+
+.container {
+
+
+  .m-nav {
+    /*菜单导航*/
+    //height: 14.175rem;
+    height: 10.5rem;
+    background: #fff;
+    margin-top: .4rem;
+    overflow: hidden;
+    ul{
+      overflow: hidden;
+      li {
+        float: left;
+        text-align: center;
+        font-size: .6rem;
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin: 1.275rem auto .325rem;
+        }
+      }
+    }
+
+  }
+
+  .m-sale{
+    /*促销列表*/
+    .m-sale-top {
+      height: 1.7rem;
+      background: @color;
+      padding: 0 .55rem;
+      line-height: 1.7rem;
+      box-sizing: border-box;
+      span {
+        font-size: .75rem;
+        color: #fff;
+      }
+      img{
+        float: right;
+        width: 1.125rem;
+        height: 1.125rem;
+        margin-top: .32rem;
+      }
+    }
+    .m-sale-main {
+      background: #fff;
+      ul {
+        li {
+          height: 6.35rem;
+          border-bottom: 1px solid #e7e7e7;
+          box-sizing: border-box;
+          padding: .7rem .4rem;
+          font-size: .7rem;
+          img {
+            width: 5rem;
+            height: 5rem;
+            float: left;
+          }
+          .info {
+            overflow: hidden;
+            padding-left: .6rem;
+            box-sizing: border-box;
+            .title {
+              height: 3.275rem;
+              font-size: .67rem;
+            }
+            .shop {
+              font-size: .57rem;
+              color: #ccc;
+              span {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .m-sale-footer {
+      padding-top: .625rem;
+      background: #fff;
+      button {
+        display: block;
+        width: 17.675rem;
+        height: 1.525rem;
+        background: #f6f6f6;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .m-list {
+    margin-top: .525rem;
+  }
+
+
+}

@@ -6,8 +6,123 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>慢慢买</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+<div class="container">
+  <!------------头部   S--------------->
+  <div class="m-top">
+    <div class="m-logo fl">
+      <a href="index.html"><img src="images/header_logo.png" alt=""></a>
+    </div>
+    <div class="m-app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!------------头部   E--------------->
 
+  <!------------搜索   S--------------->
+  <div class="m-search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <button>搜索</button>
+  </div>
+  <!------------搜索   E--------------->
+
+  <!------------导航菜单   S--------------->
+  <div class="m-nav">
+    <ul>
+<!--tpl-->
+
+    </ul>
+  </div>
+  <!------------导航菜单   E--------------->
+
+<!------------打折促销部分   S--------------->
+<div class="m-sale">
+  <div class="m-sale-top">
+    <span>超值折扣推荐</span>
+    <img src="images/more.png" alt="">
+  </div>
+  <div class="m-sale-main">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="images/mnav.jpg" alt="">
+          <div class="info">
+            <p class="title">
+              dfgsdfgsdgdgdfgs
+            </p>
+            <p class="shop">京东<span>2</span></p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="m-sale-footer">
+<button>更多优惠信息>></button>
+  </div>
+</div>
+<!------------打折促销部分   E--------------->
+
+  <!------------品牌排行   S--------------->
+  <div class="m-list m-sale">
+    <div class="m-sale-top">
+      <span>品牌排行</span>
+      <img src="images/more.png" alt="">
+    </div>
+  </div>
+  <!------------品牌排行   E--------------->
+  
+  <!------------底部   S--------------->
+  <div class="m-footer">
+    <ul class="clearfix">
+      <li>登录</li>
+      <li>注册</li>
+      <li class="goTop"><img src="images/top.jpg">返回顶部</li>
+    </ul>
+    <p><span class="col-red">手机app下载</span><span class="col-black">慢慢买手机版</span>--掌上比价平台</p>
+    <p>m.www.com</p>
+  </div>
+
+  <!------------底部   E--------------->
+
+</div>
+
+<!--导航菜单渲染-->
+<script type="text/html" id="tpl">
+  {{each result  v i}}
+  <li class="w25">
+    <a href="{{v.titlehref}}" class="{{i===7 ? 'nav-more' : ''}}">
+      {{@v.img}}
+      <p>{{v.name}}</p>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<!--打折列表渲染-->
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <li>
+    <a href="#">
+      {{@v.productImgSm}}
+      <div class="info">
+        <p class="title">
+          {{v.productName}}
+          <span class="col-gold">{{v.productPinkage}}</span>
+        </p>
+        <p class="shop">{{v.productFrom}} | {{v.productTime}}<span>{{v.productComCount}}</span></p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--rem响应-->
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

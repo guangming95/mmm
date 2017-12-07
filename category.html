@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买--比价搜索</title>
+  <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+<div class="container">
+  <!------------头部   S--------------->
+  <div class="m-top">
+    <div class="m-logo fl">
+      <a href="index.html"><img src="images/header_logo.png" alt=""></a>
+    </div>
+    <div class="m-app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!------------头部   E--------------->
+
+  <!------------搜索   S--------------->
+  <div class="m-search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <button>搜索</button>
+  </div>
+  <!------------搜索   E--------------->
+
+
+  <!------------分类筛选   S--------------->
+  <div class="category">
+    <ul class="first-category">
+      <!--tpl-->
+
+    </ul>
+  </div>
+
+  <!------------分类筛选   E--------------->
+
+
+  <!------------底部   S--------------->
+  <div class="m-footer">
+    <ul class="clearfix">
+      <li>登录</li>
+      <li>注册</li>
+      <li class="goTop"><img src="images/top.jpg">返回顶部</li>
+    </ul>
+    <p><span class="col-red">手机app下载</span><span class="col-black">慢慢买手机版</span>--掌上比价平台</p>
+    <p>m.www.com</p>
+  </div>
+
+  <!------------底部   E--------------->
+
+</div>
+
+
+<!--一级分类菜单模板引擎-->
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="first-content">
+    <div class="top" data-id="{{v.titleId}}">
+      <h4>{{v.title}}</h4><span class="fa fa-angle-down"></span>
+    </div>
+    <ul class="second-category clearfix">
+      <!--tpl1-->
+    </ul>
+  </li>
+  {{/each}}
+</script>
+<!--二级分类菜单-->
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <li><a href="productlist.html?categoryid={{v.categoryId}}">{{v.category}}</a></li>
+  {{/each}}
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--rem响应-->
+<script src="js/common.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

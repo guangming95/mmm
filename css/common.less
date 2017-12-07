@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import "base";
+@import "../lib/awesome/css/font-awesome.css";
+
+html {
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+html,body {
+  width: 100%;
+}
+
+//主色调
+@color: #ff841d;
+
+@bg-image1:linear-gradient(#fff,#efefef);
+@bg-image2:linear-gradient(#efefef,#fff);
+
+.main-color {
+  color: @color;
+}
+
+.container {
+  width: 100%;
+  background: #f1f1f1;
+  .m-top {
+    /*头部*/
+    height: 2.45rem;
+    background: @color;
+    line-height: 2.45rem;
+    .m-logo {
+      margin-top: .6rem;
+      margin-left: .85rem;
+      img {
+        width: 9.35rem;
+        height: 1.3rem;
+      }
+    }
+    .m-app {
+      margin: .5rem .375rem 0 0;
+      img {
+        width: 1.275rem;
+        height: 1.275rem;
+      }
+    }
+  }
+
+  .m-search {
+    /* 搜索 */
+    height: 2.525rem;
+    background: #fff;
+    padding: .6rem .5rem 0 ;
+    box-sizing: border-box;
+    input {
+      width: 14rem;
+      height: 1.5rem;
+      background: #f1f1f1;
+      border-radius: 30px;
+      outline: none;
+      float: left;
+      padding-left: 40px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 3rem;
+      height: 1.525rem;
+      background: @color;
+      color: #fff;
+      border-radius: 30px;
+      border:none;
+      outline: none;
+      float: right;
+    }
+  }
+
+  .m-footer {
+    text-align: center;
+    ul{
+      padding: 1.225rem 0 .8rem;
+      li{
+        float: left;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        height: 1.6rem;
+        line-height: 1.6rem;
+        box-sizing: border-box;
+        &:first-child {
+          width: 30%;
+        }
+        &:nth-child(2){
+          border: 1px solid #ccc;
+          width: 30%;
+        }
+        &:last-child {
+          width: 40%;
+          img{
+            width: .7rem;
+            height: .6rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.col-red {
+  color: red;
+}
+
+.col-black {
+  color: #000;
+}
+.col-gold {
+  color: #ff8b26;
+}
+
+
+
+//筛选
+
+.m-productlist {
+  background: #fff;
+  .top {
+    height: 2rem;
+    //background-image:linear-gradient(#fff,#efefef);
+    background-image: @bg-image1;
+    line-height: 1.8rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #ccc;
+    font-size: .75rem;
+    box-sizing: border-box;
+    padding: 0 .475rem;
+    .filtrate {
+      width: 3.1rem;
+      height: 1.475rem;
+      border-radius: 10px;
+      background-image: @bg-image2;
+      border: 1px solid #ccc;
+      margin-top: .25rem;
+    }
+    a {
+      font-size: .75rem;
+    }
+    span {
+      margin: 0 3px;
+    }
+  }
+}
