@@ -1,0 +1,122 @@
+@import "common";
+
+.container {
+  .m-top {
+    background: #f4483e;
+  }
+}
+
+.baicaijia {
+  overflow: hidden;
+  position: relative;
+  .bcj-top {
+    height: 2rem;
+    background: #fff;
+    overflow: auto;
+    ul {
+      width: 1000%;
+      margin-right: 2rem;
+      height: 100%;
+      //background: skyblue;
+      li {
+        height: 100%;
+        line-height: 2rem;
+        //background: yellowgreen;
+        margin: 0 .6rem;
+        float: left;
+        font-size: .6rem;
+        box-sizing: border-box;
+        &.now {
+          color: red;
+          border-bottom: 3px solid red;
+        }
+      }
+    }
+    .right {
+      width: 2rem;
+      height: 2rem;
+      background: gold;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.2rem;
+      &:before {
+        position: relative;
+        top: .4rem;
+        left: .4rem;
+        color: #ccc;
+      }
+    }
+  }
+  .bcj-content {
+    ul {
+      li {
+        padding: .5rem .3rem;
+        margin-top: .2rem;
+        background: #fff;
+        img {
+          width: 6.4rem;
+          height: 6.4rem;
+          float: left;
+        }
+        .bcj-info {
+          margin-left: 7rem;
+          font-size: .7rem;
+          .price {
+            color: red;
+            display: inline-block;
+            padding: .3rem 0;
+            em {
+              font-size: .4rem;
+            }
+            del {
+              font-size: .4rem;
+              color: #ccc;
+            }
+          }
+          .bar {
+            color: #fb3461;
+            height: 1.5rem;
+            padding: .3rem 0;
+            i {
+              display: inline-block;
+              width: 4.3rem;
+              height: .8rem;
+              background: #ffb7b7;
+              border-radius: 15px;
+              overflow: hidden;
+              em {
+                display: inline-block;
+                height: 100%;
+                background: red;
+              }
+            }
+            b {
+              font-weight: 400;
+            }
+          }
+          .last {
+            a {
+              font-size: .6rem;
+              height: 1.4rem;
+              line-height: 1.4rem;
+              text-align: center;
+              &:first-child{
+                display: inline-block;
+                width: 5.4rem;
+                border: 1px dashed #fb3461;
+              }
+              &:last-child {
+                float: right;
+                width: 3rem;
+                background: #ff5e5d;
+                color: #fff;
+                border-radius:7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

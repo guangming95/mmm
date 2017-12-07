@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买--省钱控--最新优惠</title>
+  <link rel="stylesheet" href="css/moneyproduct.css">
+</head>
+<body>
+<div class="container">
+  <!------------头部   S--------------->
+  <div class="m-top">
+    <div class="m-logo fl">
+      <a href="javascript:history.go(-1);"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <p>国内折扣</p>
+    <div class="m-app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!------------头部   E--------------->
+
+  <div class="moneyctrlProduct">
+    <h3 class="title">
+      <!--模板渲染 tpl-->
+    </h3>
+    <span class="product-info">
+      <!--购买时间信息  模板渲染，tpl1-->
+    </span>
+    <div class="info-img clearfix">
+      <!--商品介绍信息  模板渲染  tpl2-->
+    </div>
+
+    <div class="info-img-box">
+      <!--商品详情   模板渲染 tpl3-->
+    </div>
+
+    <div class="info-comment">
+      <!--评论区域  模板渲染  tpl4-->
+    </div>
+
+
+  </div>
+
+
+  <!------------底部   S--------------->
+  <div class="m-footer">
+    <ul class="clearfix">
+      <li>登录</li>
+      <li>注册</li>
+      <li class="goTop"><img src="images/top.jpg">返回顶部</li>
+    </ul>
+    <p><span class="col-red">手机app下载</span><span class="col-black">慢慢买手机版</span>--掌上比价平台</p>
+    <p>m.www.com</p>
+  </div>
+
+  <!------------底部   E--------------->
+
+</div>
+
+
+<!--标题-->
+<script type="text/html" id="tpl">
+{{result[0].productName}}
+</script>
+
+<!--购买时间信息-->
+<script type="text/html" id="tpl1">
+{{result[0].productFrom}}&nbsp;&nbsp;&nbsp;&nbsp;
+{{result[0].productTime}}&nbsp;&nbsp;&nbsp;&nbsp;
+{{result[0].productTips}}
+</script>
+
+
+<!--商品介绍信息-->
+
+<script type="text/html" id="tpl2">
+  <div class="info-text">
+    {{result[0].productInfo}}
+    {{result[0].productInfo1}}
+  </div>
+  {{@result[0].productImgSm}}
+</script>
+
+
+<!--商品详情-->
+
+<script type="text/html" id="tpl3">
+{{@result[0].productImg2}}
+{{@result[0].productCity}}
+<a href="#" class="gotourl">前往购买</a>
+<img src="images/mmbweixin2.png" alt="">
+</script>
+
+
+<!--评论详情-->
+
+<script type="text/html" id="tpl4">
+{{@result[0].productComment}}
+</script>
+
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--rem响应-->
+<script src="js/common.js"></script>
+<script src="js/moneyproduct.js"></script>
+</body>
+</html>

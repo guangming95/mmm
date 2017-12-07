@@ -442,118 +442,146 @@ body {
 .m-footer.normal-footer ul {
   padding-top: 0 !important;
 }
-.m-footer {
-  background: #efefef;
+.container .m-top {
+  overflow: hidden;
+}
+.container .m-top .m-logo {
+  margin-top: .1rem;
+}
+.container .m-top .m-logo a > i:before {
+  font-size: 2rem;
+  color: #fff;
+}
+.container .m-top p {
+  display: inline-block;
+  width: 15.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .m-footer ul {
   padding-top: 0 !important;
 }
-.m-productlist .img-box {
-  width: 18.55rem;
-  height: 12.6rem;
-  background: #fff;
+.moneyctrlProduct {
+  overflow: hidden;
+  padding: 1rem .5rem;
   box-sizing: border-box;
-  padding: .93rem;
-  font-size: .85rem;
-  text-align: center;
+  background: #fff;
 }
-.m-productlist .img-box img {
-  width: 13.8rem;
-  height: 9rem;
+.moneyctrlProduct h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.moneyctrlProduct .product-info {
+  font-size: .5rem;
+  color: #ccc;
+}
+.moneyctrlProduct .info-img {
+  margin-top: 1rem;
+  position: relative;
+  font-size: .7rem;
+}
+.moneyctrlProduct .info-img .info-text {
+  margin-right: 7rem;
+  margin-bottom: .8rem;
+}
+.moneyctrlProduct .info-img img {
+  float: right;
+  width: 7rem;
+  height: 8rem;
+}
+.moneyctrlProduct .info-img-box {
+  overflow: hidden;
+  padding-top: 1rem;
+}
+.moneyctrlProduct .info-img-box img {
+  display: block;
   margin: 0 auto;
 }
-.m-productlist .info .nav {
-  height: 1.6rem;
-  border-top: 1px solid #bd3c05;
-  border-bottom: 1px solid #bd3c05;
+.moneyctrlProduct .info-img-box #disstorck {
+  margin: 0 auto;
 }
-.m-productlist .info .nav li {
-  width: 33.333%;
-  background: #ffcc43;
-  color: #fff;
-  float: left;
+.moneyctrlProduct .info-img-box #disstorck li {
+  height: 1rem;
+  line-height: 1rem;
+  border-bottom: 1px dashed #ccc;
+  margin: 0 6rem;
+  padding: 0 1rem;
   box-sizing: border-box;
-  height: 100%;
-  line-height: 1.6rem;
-  text-align: center;
-  font-size: .73rem;
 }
-.m-productlist .info .nav li:first-child {
-  background: #ffa42b;
+.moneyctrlProduct .info-img-box #disstorck li strong {
+  float: right;
+  color: #f68e11;
 }
-.m-productlist .info .nav li:nth-child(2) {
-  border-left: 1px solid #bd3c05;
-  border-right: 1px solid #bd3c05;
-}
-.m-productlist .info .goBuy {
-  height: 2.1rem;
-  border-bottom: 1px solid #ccc;
-  line-height: 2.1rem;
-  padding: 0 .35rem;
-  font-size: .77rem;
-}
-.m-productlist .info .goBuy table img {
-  float: left;
-  width: .8rem;
-  height: .8rem;
-  margin-top: .65rem;
-}
-.m-productlist .info .goBuy table .red {
-  color: red;
-  text-align: right;
-  padding-right: .8rem;
-}
-.m-productlist .info .goBuy .right span {
-  color: red;
-}
-.m-productlist .info .goBuy .right a {
-  position: relative;
-  width: 2.725rem;
+.moneyctrlProduct .info-img-box .gotourl {
+  display: block;
+  width: 16.7rem;
   height: 1.25rem;
-  background: red;
+  background: #ff9000;
   color: #fff;
-  line-height: 2;
-  padding: .2rem .4rem;
-  border-radius: 10px;
-}
-.m-productlist .info .other {
-  display: block;
-  padding: .5rem 0;
-  font-size: .6rem;
-  line-height: 2;
-}
-.m-productlist .comment .comment-top {
-  height: 1.6rem;
   text-align: center;
-  background: #bdbdbd;
-  font-size: .725rem;
-  line-height: 1.6rem;
+  line-height: 1.25rem;
+  border-radius: 10px;
+  margin: .6rem auto 2rem;
 }
-.m-productlist .comment .comment-info {
-  background: #fff;
+.moneyctrlProduct .info-comment {
+  padding: 1rem .5rem;
+  font-size: .9rem;
 }
-.m-productlist .comment .comment-info li {
-  padding: .75rem .5rem;
-  border-bottom: 1px solid #ccc;
+.moneyctrlProduct .info-comment img {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  border-radius: 50%;
+  margin-right: .4rem;
 }
-.m-productlist .comment .comment-info li .comment-info-top {
-  font-size: .675rem;
-}
-.m-productlist .comment .comment-info li .comment-info-top .right {
-  text-align: right;
-}
-.m-productlist .comment .comment-info li .comment-info-comment {
-  font-size: .7rem;
-  margin-top: .55rem;
-}
-.m-productlist .bottom {
-  padding: .775rem .45rem;
-}
-.m-productlist .bottom button {
-  display: block;
-  width: 18rem;
-  height: 1.62rem;
-  background-image: linear-gradient(#eee, #cacaca);
+.moneyctrlProduct .info-comment .reply {
+  height: 5.5rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.moneyctrlProduct .info-comment .reply .form textarea {
+  width: 100%;
+  height: 3.7rem;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #ccc;
+  resize: none;
+  padding: .5rem;
+}
+.moneyctrlProduct .info-comment .reply .form .ctrl input {
+  width: 5rem;
+  height: 1.8rem;
+  background: #ff8b14;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.moneyctrlProduct .info-comment .list {
+  font-size: .5rem;
+}
+.moneyctrlProduct .info-comment .list li {
+  overflow: hidden;
+  padding: .4rem 0;
+}
+.moneyctrlProduct .info-comment .list li .con {
+  overflow: hidden;
+}
+.moneyctrlProduct .info-comment .list li .con .name {
+  font-size: .3rem;
+}
+.moneyctrlProduct .info-comment .list li .con .name .username {
+  float: left;
+}
+.moneyctrlProduct .info-comment .list li .con .name .time {
+  float: right;
+}
+.moneyctrlProduct .info-comment .list li .con .content {
+  display: inline-block;
+  margin-top: .3rem;
 }
