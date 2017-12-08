@@ -5,8 +5,8 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>慢慢买---分类商品列表</title>
-  <link rel="stylesheet" href="css/productlistwen.css">
+  <title>慢慢买---商场导航</title>
+  <link rel="stylesheet" href="css/brandTitle.css">
 </head>
 <body>
 <div class="container">
@@ -28,47 +28,36 @@
   </div>
   <!------------搜索   E--------------->
 
-  <div class="m-productlist">
-    <div class="top clearfix">
-      <div class="old-url fl">
-        <a href="index.html">首页</a><span>></span><a href="category.html">全部分类</a><span>></span><a href="#">电视</a><span>></span></div>
-      <button class="filtrate fr">筛选</button>
-    </div>
-
-
-
-    <div class="main">
-
-      <ul>
-        <li>&nbsp;
-          <a href="#" class="clearfix">
-            <img src="images/mnav.jpg" alt="">
-            <div class="info">
-              <p>大护法开始就开始地方晖接口分开偶读发觉的</p>
-              <p>&yen;5555</p>
-              <p>报价(2)  评论(3)</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-
-
-    </div>
-
-
-    <div class="bottom clearfix">
-      <button class="btn-prev fl">上一页</button>
-      <div class="btn-center"><span class="currentPage">1/3</span><i class="fa fa-caret-down fr"></i>
-        <ul>
-          <li>1/3 </li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </ul>
-      </div>
-      <button class="btn-next fr">下一页</button>
+<div class="brandtitle">
+  <div class="top clearfix">
+    <div class="old-url fl">
+      <a href="index.html">首页</a><span>></span><a href="category.html">全部分类</a><span>></span>
     </div>
   </div>
+  <div class="brandtitle-center">
+    热门品牌排行
+  </div>
+  <ul>
+    <!--模板引擎渲染数据 tpl-->
+  </ul>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!------------底部   S--------------->
@@ -87,10 +76,17 @@
 </div>
 
 
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="fa fa-angle-down"><a href="brand.html?brandtitleid={{v.brandTitleId}}">{{v.brandTitle}}</a></li>
+  {{/each}}
+</script>
+
+
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/artTemplate/template-web.js"></script>
 <!--rem响应-->
 <script src="js/common.js"></script>
-<!--<script src="js/productlist.js"></script>-->
+<script src="js/brandTitle.js"></script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买--凑单品</title>
+  <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="container">
+  <!------------头部   S--------------->
+  <div class="m-top normal-top">
+    <div class="m-logo fl">
+      <a href="javascript:history.go(-1);"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <p>白菜价-凑单品</p>
+    <div class="m-app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!------------头部   E--------------->
+
+  <div class="bsproduct">
+    <div class="bsproduct-top">
+      <ul class="fitst-nav">
+        <li data-shopId="1" class="fa fa-caret-down">京东</li>
+        <li data-areaId="1" class="fa fa-caret-down">华北</li>
+        <li class="fa fa-caret-down">全部价格</li>
+      </ul>
+      <div class="right fa fa-list"></div>
+      <div class="second">
+        <ul class="second-nav nav-shop">
+          <!--模板加载二级商铺菜单 tp2-->
+        </ul>
+        <ul class="second-nav nav-area">
+          <!--模板加载二级地区菜单 tp2-->
+        </ul>
+        <ul class="second-nav nav-all">
+          <li class="fa fa-check">全部价格</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bsproduct-content">
+      <ul class="clearfix">
+        <!--二级商品列表加载模板  tpl1-->
+      </ul>
+    </div>
+
+
+  </div>
+
+
+  <!------------底部   S--------------->
+  <div class="m-footer">
+    <ul class="clearfix">
+      <li>登录</li>
+      <li>注册</li>
+      <li class="goTop"><img src="images/top.jpg">返回顶部</li>
+    </ul>
+    <p><span class="col-red">手机app下载</span><span class="col-black">慢慢买手机版</span>--掌上比价平台</p>
+    <p>m.www.com</p>
+  </div>
+
+  <!------------底部   E--------------->
+
+</div>
+
+<!--二级 商店 菜单-->
+<script type="text/html" id="tpl">
+  {{if type==0}}
+  {{each result v i}}
+  <li class="{{0 == i ? 'fa fa-check' : ''}}" data-shopid="{{v.shopId}}" data-index="{{i}}">{{v.shopName}}</li>
+  {{/each}}
+  {{else if type ==1}}
+  {{each result v i}}
+  <li class="{{0 == i ? 'fa fa-check' : ''}}" data-areaid="{{v.areaId}}" data-index="{{i}}">{{v.areaName}}</li>
+  {{/each}}
+  {{/if}}
+</script>
+
+
+<!--二级列表动态加载-->
+
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <li>
+    <a href="#">
+      <img src="{{v.productImg}}" alt="">
+      <p class="title">{{v.productName}}</p>
+      <p class="info"><span class="left fl">{{v.productPrice}}</span><span class="goto">立即下单</span></p>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--rem响应-->
+<script src="js/common.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

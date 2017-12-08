@@ -1,0 +1,162 @@
+@import "common";
+
+.container {
+  .m-footer {
+    ul {
+      padding-top: 0;
+    }
+  }
+}
+
+.brand {
+  background: #fff;
+  padding-bottom: 1rem;
+  .top {
+    height: 1.8rem;
+    //background-image:linear-gradient(#fff,#efefef);
+    background-image: @bg-image1;
+    line-height: 1.8rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #ccc;
+    font-size: .75rem;
+    box-sizing: border-box;
+    padding: 0 .475rem;
+    .filtrate {
+      width: 3.1rem;
+      height: 1.475rem;
+      border-radius: 10px;
+      background-image: @bg-image2;
+      border: 1px solid #ccc;
+      margin-top: .125rem;
+    }
+    a {
+      font-size: .75rem;
+    }
+    span {
+      margin: 0 3px;
+    }
+  }
+  .wherebrand {
+    ul {
+      li {
+        background: #fff;
+        padding: .5rem .45rem;
+        border-bottom: 1px solid #ccc;
+        font-size: .8rem;
+        color: #333333;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        &:before{
+          position: absolute;
+          right: 5%;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #969696;
+        }
+        span{
+          float: left;
+          width: 1rem;
+          height: 1rem;
+          background: gold;
+          color: #fff;
+          line-height: 1rem;
+          text-align: center;
+        }
+        .wb-right {
+          overflow: hidden;
+          padding-left: .5rem;
+          .num{
+            font-size: .6rem;
+            color: #969696;
+            margin-top: .3rem;
+          }
+        }
+      }
+    }
+
+  }
+  .salebrand{
+    ul {
+      li {
+        height: 6rem;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        padding: 0.8rem .525rem;
+        box-sizing: border-box;
+        a {
+          font-size: .65rem;
+          img {
+            position: absolute;
+            height: 4.5rem;
+            width: 4.5rem;
+            //left: 0.525rem;
+          }
+          .info {
+            position: absolute;
+            left: 6rem;
+            p {
+              margin-bottom: .5rem;
+              padding-right: 10px;
+            }
+            .price {
+              font-size: .7rem;
+              color: red;
+            }
+            .other {
+              font-size: .5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .commentbrand{
+    ul{
+      li{
+        padding: .5rem;
+        border-bottom: 1px solid #ccc;
+        .bt-top{
+          img{
+            width: 4.8rem;
+            height: 4.8rem;
+            float: left;
+            margin-bottom: .4rem;
+          }
+          .right{
+            overflow: hidden;
+            padding-left: 1rem;
+            box-sizing: border-box;
+            font-size: .6rem;
+          }
+        }
+        .bt-comment{
+          padding: .5rem;
+          border: 1px solid #ccc;
+          background: #f8f8f8;
+          font-size: .6rem;
+          p{
+            margin-bottom: .5rem;
+            font-size: .5rem;
+            .left{
+              color: #53712f;
+            }
+            .right{
+              color: #969696;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //共用顶部
+  .brand-title {
+    padding: .5rem;
+    font-size: .7rem;
+    color: #802d08;
+    font-weight: 600;
+    background: #f3f3f3;
+  }
+
+}

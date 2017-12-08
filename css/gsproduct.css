@@ -445,34 +445,75 @@ body {
 .container .m-top {
   background: #f4483e;
 }
-.baicaijia {
+.coupon {
   overflow: hidden;
-  position: relative;
+  background: #fff;
+  padding: .3rem .15rem;
 }
-.baicaijia .bcj-top {
+.coupon ul {
+  overflow: hidden;
+}
+.coupon ul li {
+  float: left;
+  width: 5.7rem;
+  height: 4.2rem;
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  margin: .15rem;
+  padding: .4rem;
+}
+.coupon ul li a img {
+  width: 2.55rem;
+  height: 2.55rem;
+  margin: 0 auto;
+}
+.coupon ul li a p {
+  text-align: center;
+  margin-top: .1rem;
+  font-size: .6rem;
+}
+.bsproduct .bsproduct-top {
   height: 2rem;
   background: #fff;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
+  border-bottom: 1px solid #ccc;
 }
-.baicaijia .bcj-top ul {
-  width: 1000%;
-  margin-right: 2rem;
+.bsproduct .bsproduct-top .fitst-nav {
+  padding-right: 2rem;
   height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
 }
-.baicaijia .bcj-top ul li {
+.bsproduct .bsproduct-top .fitst-nav li {
   height: 100%;
+  width: 30%;
   line-height: 2rem;
-  margin: 0 .6rem;
+  padding: 0 .6rem;
   float: left;
   font-size: .6rem;
   box-sizing: border-box;
+  text-align: center;
+  position: relative;
 }
-.baicaijia .bcj-top ul li.now {
+.bsproduct .bsproduct-top .fitst-nav li.now {
   color: red;
   border-bottom: 3px solid red;
 }
-.baicaijia .bcj-top .right {
+.bsproduct .bsproduct-top .fitst-nav li:last-child {
+  width: 40%;
+}
+.bsproduct .bsproduct-top .fitst-nav li:before {
+  position: absolute;
+  left: 80%;
+  top: 0;
+}
+.bsproduct .bsproduct-top .fitst-nav li:nth-child(2) {
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+.bsproduct .bsproduct-top .right {
   width: 2rem;
   height: 2rem;
   background: #f6f6f6;
@@ -481,74 +522,88 @@ body {
   right: 0;
   font-size: 1.2rem;
 }
-.baicaijia .bcj-top .right:before {
+.bsproduct .bsproduct-top .right:before {
   position: relative;
   top: .4rem;
   left: .4rem;
   color: #ccc;
 }
-.baicaijia .bcj-content ul li {
-  padding: .5rem .3rem;
-  margin-top: .2rem;
+.bsproduct .bsproduct-top .second-nav {
+  display: none;
+  z-index: 999;
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+  left: 0;
   background: #fff;
 }
-.baicaijia .bcj-content ul li img {
-  width: 6.4rem;
-  height: 6.4rem;
-  float: left;
-}
-.baicaijia .bcj-content ul li .bcj-info {
-  margin-left: 7rem;
-  font-size: .7rem;
-}
-.baicaijia .bcj-content ul li .bcj-info .price {
-  color: red;
-  display: inline-block;
-  padding: .3rem 0;
-}
-.baicaijia .bcj-content ul li .bcj-info .price em {
-  font-size: .4rem;
-}
-.baicaijia .bcj-content ul li .bcj-info .price del {
-  font-size: .4rem;
-  color: #ccc;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar {
-  color: #fb3461;
+.bsproduct .bsproduct-top .second-nav li {
+  width: 100%;
   height: 1.5rem;
-  padding: .3rem 0;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar i {
-  display: inline-block;
-  width: 4.3rem;
-  height: .8rem;
-  background: #ffb7b7;
-  border-radius: 15px;
-  overflow: hidden;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar i em {
-  display: inline-block;
-  height: 100%;
-  background: red;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar b {
-  font-weight: 400;
-}
-.baicaijia .bcj-content ul li .bcj-info .last a {
+  line-height: 1.5rem;
   font-size: .6rem;
-  height: 1.4rem;
-  line-height: 1.4rem;
+  padding-left: .6rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.bsproduct .bsproduct-top .second-nav li:before {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  color: #ff9501;
+}
+.bsproduct .bsproduct-content ul {
+  padding: .5rem .5rem;
+}
+.bsproduct .bsproduct-content ul li {
+  width: 48%;
+  box-sizing: border-box;
+  background: #fff;
+  float: left;
+  margin-bottom: .4rem;
+  padding-bottom: .4rem;
+  font-size: .6rem;
+}
+.bsproduct .bsproduct-content ul li:nth-child(2n+1) {
+  margin-right: .5rem;
+}
+.bsproduct .bsproduct-content ul li a img {
+  width: 8.5rem;
+  height: 7.5rem;
+  margin: 0 auto;
+}
+.bsproduct .bsproduct-content ul li a .title {
+  height: 2.2rem;
+  font-size: .5rem;
+  padding-left: .3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.bsproduct .bsproduct-content ul li a .info {
+  font-size: .7rem;
+  color: #f8411a;
   text-align: center;
-}
-.baicaijia .bcj-content ul li .bcj-info .last a:first-child {
   display: inline-block;
-  width: 5.4rem;
-  border: 1px dashed #fb3461;
+  width: 100%;
+  padding-left: .3rem;
+  box-sizing: border-box;
 }
-.baicaijia .bcj-content ul li .bcj-info .last a:last-child {
-  float: right;
-  width: 3rem;
-  background: #ff5e5d;
+.bsproduct .bsproduct-content ul li a .info .left {
+  text-align: left;
+}
+.bsproduct .bsproduct-content ul li a .info .goto {
+  display: inline-block;
+  width: 3.2rem;
+  height: 1.37rem;
+  background: #ff9501;
   color: #fff;
-  border-radius: 7px;
+  border-radius: 5px;
+  float: right;
+  margin-right: .3rem;
+  line-height: 1.37rem;
 }

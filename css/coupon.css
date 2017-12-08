@@ -445,110 +445,30 @@ body {
 .container .m-top {
   background: #f4483e;
 }
-.baicaijia {
+.coupon {
   overflow: hidden;
-  position: relative;
-}
-.baicaijia .bcj-top {
-  height: 2rem;
   background: #fff;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  padding: .3rem .15rem;
 }
-.baicaijia .bcj-top ul {
-  width: 1000%;
-  margin-right: 2rem;
-  height: 100%;
+.coupon ul {
+  overflow: hidden;
 }
-.baicaijia .bcj-top ul li {
-  height: 100%;
-  line-height: 2rem;
-  margin: 0 .6rem;
+.coupon ul li {
   float: left;
-  font-size: .6rem;
+  width: 5.7rem;
+  height: 4.2rem;
+  border: 1px solid #f1f1f1;
   box-sizing: border-box;
+  margin: .15rem;
+  padding: .4rem;
 }
-.baicaijia .bcj-top ul li.now {
-  color: red;
-  border-bottom: 3px solid red;
+.coupon ul li a img {
+  width: 2.55rem;
+  height: 2.55rem;
+  margin: 0 auto;
 }
-.baicaijia .bcj-top .right {
-  width: 2rem;
-  height: 2rem;
-  background: #f6f6f6;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 1.2rem;
-}
-.baicaijia .bcj-top .right:before {
-  position: relative;
-  top: .4rem;
-  left: .4rem;
-  color: #ccc;
-}
-.baicaijia .bcj-content ul li {
-  padding: .5rem .3rem;
-  margin-top: .2rem;
-  background: #fff;
-}
-.baicaijia .bcj-content ul li img {
-  width: 6.4rem;
-  height: 6.4rem;
-  float: left;
-}
-.baicaijia .bcj-content ul li .bcj-info {
-  margin-left: 7rem;
-  font-size: .7rem;
-}
-.baicaijia .bcj-content ul li .bcj-info .price {
-  color: red;
-  display: inline-block;
-  padding: .3rem 0;
-}
-.baicaijia .bcj-content ul li .bcj-info .price em {
-  font-size: .4rem;
-}
-.baicaijia .bcj-content ul li .bcj-info .price del {
-  font-size: .4rem;
-  color: #ccc;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar {
-  color: #fb3461;
-  height: 1.5rem;
-  padding: .3rem 0;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar i {
-  display: inline-block;
-  width: 4.3rem;
-  height: .8rem;
-  background: #ffb7b7;
-  border-radius: 15px;
-  overflow: hidden;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar i em {
-  display: inline-block;
-  height: 100%;
-  background: red;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar b {
-  font-weight: 400;
-}
-.baicaijia .bcj-content ul li .bcj-info .last a {
-  font-size: .6rem;
-  height: 1.4rem;
-  line-height: 1.4rem;
+.coupon ul li a p {
   text-align: center;
-}
-.baicaijia .bcj-content ul li .bcj-info .last a:first-child {
-  display: inline-block;
-  width: 5.4rem;
-  border: 1px dashed #fb3461;
-}
-.baicaijia .bcj-content ul li .bcj-info .last a:last-child {
-  float: right;
-  width: 3rem;
-  background: #ff5e5d;
-  color: #fff;
-  border-radius: 7px;
+  margin-top: .1rem;
+  font-size: .6rem;
 }

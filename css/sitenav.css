@@ -442,90 +442,24 @@ body {
 .m-footer.normal-footer ul {
   padding-top: 0 !important;
 }
-.m-productlist {
+.sitenav {
+  padding: .4rem 3.5rem;
+}
+.sitenav a {
+  display: inline-block;
+  padding: .5rem .4rem;
   background: #fff;
-  /*主*/
-}
-.m-productlist .top {
-  height: 1.8rem;
-  background-image: linear-gradient(#fff, #efefef);
-  line-height: 1.8rem;
-  border-top: 1px solid #efefef;
-  border-bottom: 1px solid #ccc;
-  font-size: .75rem;
-  box-sizing: border-box;
-  padding: 0 .475rem;
-}
-.m-productlist .top .filtrate {
-  width: 3.1rem;
-  height: 1.475rem;
-  border-radius: 10px;
-  background-image: linear-gradient(#efefef, #fff);
   border: 1px solid #ccc;
-  margin-top: .125rem;
+  margin: .1rem;
 }
-.m-productlist .top a {
-  font-size: .75rem;
-}
-.m-productlist .top span {
-  margin: 0 3px;
-}
-.m-productlist .main ul li {
-  height: 5.8rem;
-  border-bottom: 1px solid #ccc;
-}
-.m-productlist .main ul li a img {
-  height: 5rem;
-  width: 5rem;
+.sitenav a img {
+  width: .75rem;
+  height: .75rem;
   float: left;
+  margin-right: .2rem;
 }
-.m-productlist .main ul li a .info {
+.sitenav a span {
   overflow: hidden;
-}
-.m-productlist .bottom {
-  height: 2.325rem;
-  box-sizing: border-box;
-  padding: .5rem 1.05rem 0;
-  position: relative;
-}
-.m-productlist .bottom button {
-  width: 4.075rem;
-  height: 1.625rem;
-  background-image: linear-gradient(#efefef, #d7d7d7);
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
-.m-productlist .bottom .btn-center {
-  width: 3.85rem;
-  height: 1.675rem;
-  line-height: 1.675rem;
-  position: absolute;
-  background: skyblue;
-  top: .5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: .73rem;
-  padding-left: 1.075rem;
-}
-.m-productlist .bottom .btn-center ul {
-  display: none;
-  border: 1px solid #ccc;
-  height: 5.01rem;
-  overflow: auto;
-  position: absolute;
-  top: 1.67rem;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-.m-productlist .bottom .btn-center ul li {
-  height: 1.67rem;
-  background: gold;
-  border-bottom: 1px solid #ccc;
-  line-height: 1.67rem;
-  padding-left: 1.075rem;
-}
-.m-productlist .bottom i {
-  margin-top: .57rem;
-  margin-right: .275rem;
+  height: 100%;
+  font-size: .5rem;
 }

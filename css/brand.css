@@ -442,113 +442,138 @@ body {
 .m-footer.normal-footer ul {
   padding-top: 0 !important;
 }
-.container .m-top {
-  background: #f4483e;
+.container .m-footer ul {
+  padding-top: 0;
 }
-.baicaijia {
-  overflow: hidden;
-  position: relative;
-}
-.baicaijia .bcj-top {
-  height: 2rem;
+.brand {
   background: #fff;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
 }
-.baicaijia .bcj-top ul {
-  width: 1000%;
-  margin-right: 2rem;
-  height: 100%;
+.brand .top {
+  height: 1.8rem;
+  background-image: linear-gradient(#fff, #efefef);
+  line-height: 1.8rem;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #ccc;
+  font-size: .75rem;
+  box-sizing: border-box;
+  padding: 0 .475rem;
 }
-.baicaijia .bcj-top ul li {
-  height: 100%;
-  line-height: 2rem;
-  margin: 0 .6rem;
-  float: left;
-  font-size: .6rem;
+.brand .top .filtrate {
+  width: 3.1rem;
+  height: 1.475rem;
+  border-radius: 10px;
+  background-image: linear-gradient(#efefef, #fff);
+  border: 1px solid #ccc;
+  margin-top: .125rem;
+}
+.brand .top a {
+  font-size: .75rem;
+}
+.brand .top span {
+  margin: 0 3px;
+}
+.brand .wherebrand ul li {
+  background: #fff;
+  padding: .5rem .45rem;
+  border-bottom: 1px solid #ccc;
+  font-size: .8rem;
+  color: #333333;
+  position: relative;
+  width: 100%;
   box-sizing: border-box;
 }
-.baicaijia .bcj-top ul li.now {
-  color: red;
-  border-bottom: 3px solid red;
-}
-.baicaijia .bcj-top .right {
-  width: 2rem;
-  height: 2rem;
-  background: #f6f6f6;
+.brand .wherebrand ul li:before {
   position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 1.2rem;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #969696;
 }
-.baicaijia .bcj-top .right:before {
-  position: relative;
-  top: .4rem;
-  left: .4rem;
-  color: #ccc;
-}
-.baicaijia .bcj-content ul li {
-  padding: .5rem .3rem;
-  margin-top: .2rem;
-  background: #fff;
-}
-.baicaijia .bcj-content ul li img {
-  width: 6.4rem;
-  height: 6.4rem;
+.brand .wherebrand ul li span {
   float: left;
-}
-.baicaijia .bcj-content ul li .bcj-info {
-  margin-left: 7rem;
-  font-size: .7rem;
-}
-.baicaijia .bcj-content ul li .bcj-info .price {
-  color: red;
-  display: inline-block;
-  padding: .3rem 0;
-}
-.baicaijia .bcj-content ul li .bcj-info .price em {
-  font-size: .4rem;
-}
-.baicaijia .bcj-content ul li .bcj-info .price del {
-  font-size: .4rem;
-  color: #ccc;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar {
-  color: #fb3461;
-  height: 1.5rem;
-  padding: .3rem 0;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar i {
-  display: inline-block;
-  width: 4.3rem;
-  height: .8rem;
-  background: #ffb7b7;
-  border-radius: 15px;
-  overflow: hidden;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar i em {
-  display: inline-block;
-  height: 100%;
-  background: red;
-}
-.baicaijia .bcj-content ul li .bcj-info .bar b {
-  font-weight: 400;
-}
-.baicaijia .bcj-content ul li .bcj-info .last a {
-  font-size: .6rem;
-  height: 1.4rem;
-  line-height: 1.4rem;
+  width: 1rem;
+  height: 1rem;
+  background: gold;
+  color: #fff;
+  line-height: 1rem;
   text-align: center;
 }
-.baicaijia .bcj-content ul li .bcj-info .last a:first-child {
-  display: inline-block;
-  width: 5.4rem;
-  border: 1px dashed #fb3461;
+.brand .wherebrand ul li .wb-right {
+  overflow: hidden;
+  padding-left: .5rem;
 }
-.baicaijia .bcj-content ul li .bcj-info .last a:last-child {
-  float: right;
-  width: 3rem;
-  background: #ff5e5d;
-  color: #fff;
-  border-radius: 7px;
+.brand .wherebrand ul li .wb-right .num {
+  font-size: .6rem;
+  color: #969696;
+  margin-top: .3rem;
+}
+.brand .salebrand ul li {
+  height: 6rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  padding: 0.8rem .525rem;
+  box-sizing: border-box;
+}
+.brand .salebrand ul li a {
+  font-size: .65rem;
+}
+.brand .salebrand ul li a img {
+  position: absolute;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.brand .salebrand ul li a .info {
+  position: absolute;
+  left: 6rem;
+}
+.brand .salebrand ul li a .info p {
+  margin-bottom: .5rem;
+  padding-right: 10px;
+}
+.brand .salebrand ul li a .info .price {
+  font-size: .7rem;
+  color: red;
+}
+.brand .salebrand ul li a .info .other {
+  font-size: .5rem;
+}
+.brand .commentbrand ul li {
+  padding: .5rem;
+  border-bottom: 1px solid #ccc;
+}
+.brand .commentbrand ul li .bt-top img {
+  width: 4.8rem;
+  height: 4.8rem;
+  float: left;
+  margin-bottom: .4rem;
+}
+.brand .commentbrand ul li .bt-top .right {
+  overflow: hidden;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  font-size: .6rem;
+}
+.brand .commentbrand ul li .bt-comment {
+  padding: .5rem;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  font-size: .6rem;
+}
+.brand .commentbrand ul li .bt-comment p {
+  margin-bottom: .5rem;
+  font-size: .5rem;
+}
+.brand .commentbrand ul li .bt-comment p .left {
+  color: #53712f;
+}
+.brand .commentbrand ul li .bt-comment p .right {
+  color: #969696;
+}
+.brand .brand-title {
+  padding: .5rem;
+  font-size: .7rem;
+  color: #802d08;
+  font-weight: 600;
+  background: #f3f3f3;
 }

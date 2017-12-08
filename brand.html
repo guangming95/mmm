@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买---商场导航</title>
+  <link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+<div class="container">
+  <!------------头部   S--------------->
+  <div class="m-top">
+    <div class="m-logo fl">
+      <a href="index.html"><img src="images/header_logo.png" alt=""></a>
+    </div>
+    <div class="m-app fr">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!------------头部   E--------------->
+
+  <!------------搜索   S--------------->
+  <div class="m-search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <button>搜索</button>
+  </div>
+  <!------------搜索   E--------------->
+
+  <div class="brand">
+    <div class="top clearfix">
+      <div class="old-url fl">
+        <a href="index.html">首页</a><span>></span><a href="category.html">全部分类</a><span>></span>
+      </div>
+    </div>
+    <div class="wherebrand">
+      <div class="brand-title">平板电视哪个牌子好</div>
+      <ul>
+        <!--十大品牌 tpl-->
+      </ul>
+    </div>
+    <div class="salebrand">
+      <div class="brand-title">平板电视产品销量排行</div>
+      <ul>
+
+        <!--产品列表模板渲染  tpl1-->
+      </ul>
+    </div>
+    <div class="commentbrand">
+      <div class="brand-title">平板电视最新评论</div>
+      <ul>
+        <!--评论动态加载 tpl2-->
+      </ul>
+    </div>
+
+
+  </div>
+
+
+  <!------------底部   S--------------->
+  <div class="m-footer">
+    <ul class="clearfix">
+      <li>登录</li>
+      <li>注册</li>
+      <li class="goTop"><img src="images/top.jpg">返回顶部</li>
+    </ul>
+    <p><span class="col-red">手机app下载</span><span class="col-black">慢慢买手机版</span>--掌上比价平台</p>
+    <p>m.www.com</p>
+  </div>
+
+  <!------------底部   E--------------->
+
+</div>
+
+<!--品牌排行 tpl-->
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="fa fa-angle-right">
+    <span>{{i+1}}</span>
+    <div class="wb-right">
+      <p>{{v.brandName}}</p>
+      <p class="num">{{v.brandInfo}}了</p>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+<!--商品列表 tpl1-->
+
+<script type="text/html" id="tpl1">
+  {{each result v i}}
+  <li>
+    <a href="bijia.html?categoryid={{v.categoryId}}&productId={{v.productId}}&brandName={{v.brandName}}"
+       class="clearfix">
+      {{@v.productImg}}
+      <div class="info">
+        <p>{{v.productName}}</p>
+        <p class="price">{{v.productPrice}}</p>
+        <p class="other">{{v.productQuote}} {{v.productCom}}</p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<!--评论自动加载-->
+<script type="text/html"  id="tpl2">
+{{each result v i}}
+<li>
+  <div class="bt-top clearfix">
+    <img src="images/product.jpg" alt="">
+    <div class="right">
+      sfaf sdfa d
+    </div>
+  </div>
+  <div class="bt-comment">
+    <p class="clearfix"><span class="left fl">{{v.comName}}</span> <span class="right fr">{{v.comTime}}</span> </p>
+    {{v.comContent}}
+  </div>
+
+</li>
+  {{/each}}
+</script>
+
+<!--评论标题单独加载-->
+<script type="text/html" id="tpl3">
+{{data}}
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<!--rem响应-->
+<script src="js/common.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>
