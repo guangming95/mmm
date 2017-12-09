@@ -5,7 +5,7 @@ $(function () {
         type: "get",
         success: function (data) {
             data.type = 0;
-            console.log(data);
+            // console.log(data);
             $('.nav-shop').html(template("tpl", data));
         }
     });
@@ -15,13 +15,13 @@ $(function () {
         type: "get",
         success: function (data) {
             data.type = 1;
-            console.log(data);
+            // console.log(data);
             $('.nav-area').html(template("tpl", data));
         }
     });
-var shopid = 0;
-var areaid = 0;
-    renderProduct(shopid,areaid);
+    var shopid = 0;
+    var areaid = 0;
+    renderProduct(shopid, areaid);
 
     // 商品列表加载
 
@@ -41,29 +41,29 @@ var areaid = 0;
     }
 
     //展开导航点击事件
-    
-    $('.fitst-nav li').eq(0).on("click",function () {
+
+    $('.fitst-nav li').eq(0).on("click", function () {
         $('.nav-shop').slideToggle(400).siblings().hide();
-        $('.nav-shop').off().on("click","li",function () {
-           shopid = $(this).data("shopid");
+        $('.nav-shop').off().on("click", "li", function () {
+            shopid = $(this).data("shopid");
             $('.nav-shop').hide();
-            renderProduct(shopid,areaid);
+            renderProduct(shopid, areaid);
             $('.nav-shop li').eq(shopid).addClass("fa fa-check").siblings().removeClass("fa fa-check");
             $('.fitst-nav li').eq(0).html($('.nav-shop li').eq(shopid).html())
         });
     });
-    $('.fitst-nav li').eq(1).on("click",function () {
+    $('.fitst-nav li').eq(1).on("click", function () {
         $('.nav-area').slideToggle(400).siblings().hide();
-        $('.nav-area').off().on("click","li",function () {
+        $('.nav-area').off().on("click", "li", function () {
             // console.log($(this).data("areaid")) ;
             areaid = $(this).data("areaid");
             $('.nav-area').hide();
-            renderProduct(shopid,areaid);
+            renderProduct(shopid, areaid);
             $('.nav-area li').eq(areaid).addClass("fa fa-check").siblings().removeClass("fa fa-check");
             $('.fitst-nav li').eq(1).html($('.nav-area li').eq(areaid).html())
         });
     });
-    $('.fitst-nav li').eq(2).on("click",function () {
+    $('.fitst-nav li').eq(2).on("click", function () {
         $('.nav-all').slideToggle(400).siblings().hide();
     });
 });

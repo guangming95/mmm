@@ -5,7 +5,7 @@ $(function(){
         url: "http://127.0.0.1:9090/api/getbaicaijiatitle",
         type:"get",
         success:function (data) {
-            console.log(data);
+            // console.log(data);
             $('.baicaijia .bcj-top ul').html(template("tpl",data));
             // console.log(template("tpl", data));
 
@@ -34,7 +34,7 @@ $(function(){
                 titleid:titleid||0
             },
             success:function (data) {
-                console.log(data);
+                // console.log(data);
 $('.baicaijia .bcj-content ul').html(template("tpl1",data));
             }
 

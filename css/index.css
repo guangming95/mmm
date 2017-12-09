@@ -517,14 +517,18 @@ body {
   padding-top: .625rem;
   background: #fff;
 }
-.container .m-sale .m-sale-footer button {
+.container .m-sale .m-sale-footer a {
   display: block;
   width: 17.675rem;
   height: 1.525rem;
+  line-height: 1.525rem;
+  font-size: .6rem;
+  color: #333333;
   background: #f6f6f6;
   border-radius: 3px;
   border: 1px solid #ccc;
   margin: 0 auto;
+  text-align: center;
 }
 .container .m-list {
   margin-top: .525rem;

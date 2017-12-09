@@ -33,8 +33,8 @@ $(function () {
 
     //    返回顶部
     $('.goTop').on("click", function () {
-        console.log("go-top");
-        $('html,body').animate({"scrollTop":0},500);
+        // console.log("go-top");
+        $('html,body').animate({"scrollTop": 0}, 500);
     });
 
 
@@ -62,7 +62,7 @@ $(function () {
 //    自定义方法
     window.OtherTool = {
         //翻页 ，数据，回调ajax渲染  当前页-可省略-默认1
-        pageTo:function(data, callback, pageid) {
+        pageTo: function (data, callback, pageid) {
             //页数加载
 
             var index = pageid || 1;
@@ -108,9 +108,8 @@ $(function () {
                     callback(index + 1);
                     // console.log("xia一页", index + 1);
                 }
-
-
             });
+            $('html,body').animate({"scrollTop": 0}, 0);
         }
 
     }

@@ -8,7 +8,7 @@ $(function () {
             productid: productid
         },
         success: function (data) {
-            console.log(data);
+            // console.log(data);
             //渲染标题
             $('.discount .title').html(template("tpl",data));
             //渲染来源时间
@@ -23,5 +23,5 @@ $(function () {
             $('.discount .baoyou').html(template("tplby",data));
         }
     });
-    console.log(1);
+    // console.log(1);
 });

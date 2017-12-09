@@ -13,10 +13,10 @@ $(function () {
                 categoryid: categoryid
             },
             success: function (data) {
-                console.log(data);
+                // console.log(data);
                 $('.old-url').html(template("tpl", data));
                 var id = data.result[0].categoryId;
-                console.log(id);
+                // console.log(id);
 
                 //    商品列表加载
                 $.ajax({
@@ -27,7 +27,7 @@ $(function () {
                         pageid: pageid ||1
 
                     }, success: function (data) {
-                        console.log(data);
+                        // console.log(data);
                         $('.m-productlist .main ul').html(template("tpl1", data));
                         pageRender(data,pageid);
 
@@ -50,7 +50,7 @@ $(function () {
         tempObj.count = count;
         tempObj.index = index;
         $('.m-productlist .bottom .btn-center').html(template("tpl2", tempObj));
-        console.log(tempObj);
+        // console.log(tempObj);
 
 
         $('.btn-center .currentPage').on("click", function () {
@@ -64,26 +64,27 @@ $(function () {
             //第二种ajax传值
             renderInfo($(this).data("pageid"));
         });
+        $('html,body').animate({"scrollTop":0},0);
     }
     
 //    上一页，下一页点击事件
     
     $('.btn-prev').on("click",function () {
         var index = $('.currentPage').data("index");
-        console.log(index);
+        // console.log(index);
         if(1<index){
             renderInfo(index-1);
-            console.log("上一页",index-1);
+            // console.log("上一页",index-1);
         }
 
     });
     $('.btn-next').on("click",function () {
         var index = $('.currentPage').data("index");
         var count = $('.currentPage').data("end");
-        console.log(count);
+        // console.log(count);
         if(index<count){
             renderInfo(index+1);
-            console.log("xia一页",index+1);
+            // console.log("xia一页",index+1);
         }
 
 

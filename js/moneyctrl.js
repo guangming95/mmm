@@ -11,7 +11,7 @@ $(function () {
                 pageid: pageid
             },
             success: function (data) {
-                console.log(data);
+                // console.log(data);
                 $('.moneyctrl .list').html(template("tpl", data));
                 OtherTool.pageTo(data,renderInfo, pageid)
             }

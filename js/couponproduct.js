@@ -9,7 +9,7 @@ $(function(){
             couponid:couponid
         },
         success:function (data) {
-            console.log(data);
+            // console.log(data);
             $('.couponproduct ul').html(template("tpl",data));
             dataAll = data;
         }

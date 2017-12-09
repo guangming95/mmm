@@ -8,7 +8,7 @@ $(function () {
         url: "http://127.0.0.1:9090/api/getcategorytitle",
         type: "get",
         success: function (data) {
-            console.log(data);
+            // console.log(data);
             $('.first-category').html(template("tpl", data));
             // 遍历一级数据，根据一级分类加载二级分类
             $('.first-content .top').each(function (i) {
@@ -21,7 +21,7 @@ $(function () {
                         titleid: id
                     },
                     success: function (data) {
-                        console.log(data);
+                        // console.log(data);
                         $('.second-category').eq(i).html(template("tpl1",data));
                     }
                 });

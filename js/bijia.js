@@ -12,7 +12,7 @@ $(function () {
             type: "get",
             data: {categoryid: categoryId},
             success: function (data) {
-                console.log(data);
+                // console.log(data);
                 data.brandName = brandName;
                 $('.old-url').html(template("tpl", data));
             }
@@ -25,7 +25,7 @@ $(function () {
                 productid: productId
             },
             success: function (data) {
-                console.log(data);
+                // console.log(data);
                 $('.img-box').html(template("tpl1", data));
                 $('.info').html(template("tpl2", data));
             }
@@ -38,7 +38,7 @@ $(function () {
                 productid: productId
             },
             success: function (data) {
-                console.log(data);
+                // console.log(data);
                 $('.comment-info').html(template("tpl3", data));
             }
         });
