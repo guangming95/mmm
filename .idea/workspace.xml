@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="243f2608-71cd-4cb4-bdf3-12d2a7883111" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baicaijia.html" afterPath="$PROJECT_DIR$/baicaijia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brand.html" afterPath="$PROJECT_DIR$/brand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coupon.html" afterPath="$PROJECT_DIR$/coupon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/baicaijia.css" afterPath="$PROJECT_DIR$/css/baicaijia.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/baicaijia.less" afterPath="$PROJECT_DIR$/css/baicaijia.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.less" afterPath="$PROJECT_DIR$/css/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/baicaijia.js" afterPath="$PROJECT_DIR$/js/baicaijia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bijia.js" afterPath="$PROJECT_DIR$/js/bijia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/brand.js" afterPath="$PROJECT_DIR$/js/brand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/brandTitle.js" afterPath="$PROJECT_DIR$/js/brandTitle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/category.js" afterPath="$PROJECT_DIR$/js/category.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/coupon.js" afterPath="$PROJECT_DIR$/js/coupon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/couponproduct.js" afterPath="$PROJECT_DIR$/js/couponproduct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/discount.js" afterPath="$PROJECT_DIR$/js/discount.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gsproduct.js" afterPath="$PROJECT_DIR$/js/gsproduct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/moneyctrl.js" afterPath="$PROJECT_DIR$/js/moneyctrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/moneyproduct.js" afterPath="$PROJECT_DIR$/js/moneyproduct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/productlist.js" afterPath="$PROJECT_DIR$/js/productlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sitenav.js" afterPath="$PROJECT_DIR$/js/sitenav.js" />
-    </list>
+    <list default="true" id="243f2608-71cd-4cb4-bdf3-12d2a7883111" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -53,11 +28,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="brand.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="brand.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/brand.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+                <state relative-caret-position="154">
+                  <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
                   <folding>
                     <element signature="e#518#1361#0" expanded="false" />
                   </folding>
@@ -65,7 +40,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="brand.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="brand.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/brand.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="140">
@@ -192,7 +167,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="123" />
     <option name="width" value="1224" />
     <option name="height" value="745" />
@@ -296,15 +271,15 @@
       <workItem from="1512522204892" duration="44782000" />
       <workItem from="1512606903096" duration="43144000" />
       <workItem from="1512695139139" duration="27776000" />
-      <workItem from="1512780527128" duration="8074000" />
+      <workItem from="1512780527128" duration="8430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123776000" />
+    <option name="totallyTimeSpent" value="124132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21522693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -785,6 +760,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/brand.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#518#1361#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/brand.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -794,16 +779,6 @@
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/brand.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#518#1361#0" expanded="false" />
           </folding>
         </state>
       </provider>
