@@ -13,9 +13,17 @@ $(function () {
 //    导航展开事件
     $(".m-nav").on("click", ".nav-more", function (e) {
         e.preventDefault();
-        $('.m-nav').animate({
-            height:"16rem"
-        },500);
+        $(this).toggleClass("now");
+        if($(this).hasClass("now")){
+            $('.m-nav').animate({
+                height:"16rem"
+            },500);
+        }else{
+            $('.m-nav').animate({
+                height:"10.5rem"
+            },500);
+        }
+
     });
 
 //    打折列表加载

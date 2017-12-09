@@ -33,9 +33,8 @@ $(function () {
 
     //    返回顶部
     $('.goTop').on("click", function () {
-        window.animated({
-            top: 0
-        }, 300);
+        console.log("go-top");
+        $('html,body').animate({"scrollTop":0},500);
     });
 
 

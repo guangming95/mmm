@@ -559,6 +559,7 @@ body {
   border: 1px solid #ccc;
   background: #f8f8f8;
   font-size: .6rem;
+  position: relative;
 }
 .brand .commentbrand ul li .bt-comment p {
   margin-bottom: .5rem;
@@ -569,6 +570,28 @@ body {
 }
 .brand .commentbrand ul li .bt-comment p .right {
   color: #969696;
+}
+.brand .commentbrand ul li .bt-comment:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 11px solid transparent;
+  border-bottom: 10px solid #ccc;
+  position: absolute;
+  top: -22px;
+  left: 60px;
+}
+.brand .commentbrand ul li .bt-comment:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #f8f8f8;
+  position: absolute;
+  top: -20px;
+  left: 61px;
 }
 .brand .brand-title {
   padding: .5rem;

@@ -109,7 +109,9 @@
 {{each result v i}}
 <li>
   <div class="bt-top clearfix">
-    <img src="images/product.jpg" alt="">
+    <div class="img-box">
+      <img src="images/product.jpg" alt="">
+    </div>
     <div class="right">
       sfaf sdfa d
     </div>
@@ -125,7 +127,11 @@
 
 <!--评论标题单独加载-->
 <script type="text/html" id="tpl3">
-{{data}}
+{{name}}
+</script>
+<!--评论图片单独加载-->
+<script type="text/html" id="tpl4">
+{{@img}}
 </script>
 
 <script src="lib/jquery/jquery.min.js"></script>

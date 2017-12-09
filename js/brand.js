@@ -1,6 +1,6 @@
 $(function () {
-    var data2;
-    var brandtitleid =Tool.getUrlInfo("brandtitleid");
+    var productName, productImg;
+    var brandtitleid = Tool.getUrlInfo("brandtitleid");
     $.ajax({
         url: "http://127.0.0.1:9090/api/getbrand",
         type: "get",
@@ -9,7 +9,7 @@ $(function () {
         },
         success: function (data) {
             // console.log(data);
-            $('.wherebrand ul').html(template("tpl",data));
+            $('.wherebrand ul').html(template("tpl", data));
         }
     });
     $.ajax({
@@ -21,28 +21,27 @@ $(function () {
         },
         success: function (data) {
             console.log(data);
-            data2=data.result[0].productName;
+            productName = data.result[0].productName;
+            productImg = data.result[0].productImg;
             // console.log(data2);
-            $('.salebrand ul').html(template("tpl1",data));
-
-
-
+            $('.salebrand ul').html(template("tpl1", data));
 
 
             $.ajax({
                 url: "http://127.0.0.1:9090/api/getproductcom",
                 type: "get",
                 data: {
-                    productid : 0
+                    productid: 0
                 },
                 success: function (data) {
                     console.log(data);
-                    $('.commentbrand ul').html(template("tpl2",data));
-                    $('.commentbrand ul .right').html(template("tpl3",{data:data2}));
-                    console.log(template("tpl3", {data: data2}));
+                    $('.commentbrand ul').html(template("tpl2", data));
+                    $('.commentbrand ul .right').html(template("tpl3", {name: productName,img:productImg}));
+                    $('.commentbrand .bt-top .img-box').html(template("tpl4", {name: productName,img:productImg}));
+                    console.log(template("tpl3", {data: productName}));
+                    console.log(template("tpl4", {data: productName}));
                 }
             });
-
 
 
         }
